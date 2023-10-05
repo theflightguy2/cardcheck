@@ -32,7 +32,7 @@ def issuercheck(cardnum):
         return "AMEX"
     elif int(leading2) in range(51, 56):
         return "MASTERCARD"
-    elif leading2[0] == "4":
+    elif leading2[0] == "3":
         return "JCB"
     else:
         return -1
